@@ -110,6 +110,8 @@
            const Display = document.querySelector('dialog-content-example');
            var contentx = Display.shadowRoot;
            contentx.getElementById('testBtn').click();
+           const movieDetails = document.querySelector('dialog-content-example-dialog');
+           movieDetails.shadowRoot.getElementById('movietitle').innerText = event.detail.title;
          });
          const elementx = document.querySelector('dialog-content-example');
          if(elementx!=null )
